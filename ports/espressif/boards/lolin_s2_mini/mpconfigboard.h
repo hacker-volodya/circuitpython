@@ -38,8 +38,5 @@
 #define DEFAULT_SPI_BUS_MOSI (&pin_GPIO11) // no SPI labels on S2 Mini, def from Wemos MP
 #define DEFAULT_SPI_BUS_MISO (&pin_GPIO9)  // no SPI labels on S2 Mini, def from Wemos MP
 
-#define DEFAULT_UART_BUS_RX (&pin_GPIO9)
-#define DEFAULT_UART_BUS_TX (&pin_GPIO8)
-
 #define CIRCUITPY_CONSOLE_UART_TX (&pin_GPIO10)
 #define CIRCUITPY_CONSOLE_UART_RX (&pin_GPIO11)
