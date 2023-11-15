@@ -999,7 +999,9 @@ int __attribute__((used)) main(void) {
 
     // Start the debug serial
     serial_early_init();
-
+    
+    console_uart_printf("get_safe_mode() == %d\r\n", get_safe_mode());
+    
     // Wait briefly to give a reset window where we'll enter safe mode after the reset.
     if (get_safe_mode() == SAFE_MODE_NONE) {
         set_safe_mode(wait_for_safe_mode_reset());
